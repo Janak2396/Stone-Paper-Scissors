@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Rockpaper from './Home/RockPaper';
 import reportWebVitals from './reportWebVitals';
+// import ModalTest from './Home/ModalTest'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Rockpaper/>
+    {/* <ModalTest/> */}
   </React.StrictMode>,
   document.getElementById('root')
 );

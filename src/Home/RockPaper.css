@@ -1,0 +1,230 @@
+body{
+    background-color: hsl(214, 47%, 23%);
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+
+}
+.logo-header{
+    display: flex;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    justify-content: space-between;
+    
+    color: white;
+    border: solid 2px whitesmoke;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.score{
+    display: flex;
+    flex-direction: column;
+    right: 10%;
+    background-color: aliceblue;
+    color: hsl(229, 25%, 31%);
+   text-align: center;
+    width: 100px;
+    border: none;
+    border-radius: 10%;
+    height: max-content;
+    margin: auto;
+    margin-right: 0px;
+}
+.textScore{
+    color: hsl(229, 64%, 46%);
+}
+.container{
+   position: relative;
+    margin: auto;
+    width:max-content;
+    height: max-content;
+
+}
+.triangle
+{
+ position: relative;
+ margin-top: 11%;
+}
+.papericon{
+    position: absolute;
+    background-color: aliceblue;
+    border: solid 15px hsl(230, 89%, 62%);
+    width: 20%;
+    height: 10vh;
+    border-radius: 100%;
+    padding: 4%;
+    top: 1%;
+}
+.rockicon{
+    position: absolute;
+    background-color: aliceblue;
+    border: solid 15px hsl(349, 71%, 52%);
+    width: 20%;
+    height: 10vh;
+    border-radius: 100%;
+    padding: 4%;
+    top: 1%;
+   right: 0%;
+}
+.scissorsicon{
+    position: absolute;
+    background-color: aliceblue;
+    border: solid 15px hsl(39, 89%, 49%);
+    width: 20%;
+    height: 10vh;
+    border-radius: 100%;
+    padding: 4%;
+   bottom: 1%;
+   left:33% ;
+}
+.rule-btn{
+   
+    background-color: hsl(214, 47%, 23%);
+    border: solid 1px white;
+    padding: 10px;
+    bottom: 40px;
+    color: aliceblue;
+    border-radius: 10px;
+    right: 5%;
+
+}
+
+
+@media only screen and (max-width: 700px){
+    .logo-header{
+        width: 90%;
+        margin: auto;
+    }
+    .result-content{
+        width: 100%;
+    }
+    .rock-boder{
+        width: 20%;
+    height: 11vh;
+    }
+    .paper-boder{
+        width: 20%;
+    height: 11vh;
+    }
+    .scissors-boder{
+        width: 20%;
+    height: 11vh;
+    }
+   
+} 
+@media only screen and (min-width: 701px){
+    .logo-header{
+        width: 40%;
+        margin: auto;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .result-content{
+        width: 50%;
+      
+    }
+    .rock-boder{
+        width: 20%;
+        height: 10vh;
+    }
+    .paper-boder{
+        width: 20%;
+        height: 10vh;
+    }
+    .scissors-boder{
+        width: 20%;
+        height: 10vh;
+    }
+   
+} 
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+  
+  .modal-content {
+      
+    width: max-content;
+    min-height: max-content;
+    background-color:  hsl(214, 47%, 23%);
+    padding: 25px;
+}
+
+.result-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    height: 50vh;
+    background-color:  hsl(214, 47%, 23%);
+   
+  }
+  
+  .result-card{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 20%;
+
+  }
+  .rule-btn1{
+    background-color: hsl(214, 47%, 23%);
+    border: solid 1px white;
+    padding: 10px;
+    color: aliceblue;
+    border-radius: 10px;
+    height: max-content;
+    margin-top: 3%;
+    width: max-content
+}
+ 
+.rock-boder{
+   
+    background-color: aliceblue;
+    border: solid 15px hsl(349, 71%, 52%);
+  
+    border-radius: 100%;
+    padding: 4%;
+   
+}
+.paper-boder{
+
+    background-color: aliceblue;
+    border: solid 15px hsl(230, 89%, 62%);
+  
+    border-radius: 100%;
+    padding: 4%;
+}
+.scissors-boder{
+   
+    background-color: aliceblue;
+    border: solid 15px hsl(39, 89%, 49%);
+
+    border-radius: 100%;
+    padding: 4%;
+ 
+}
+.player-result{
+justify-content:center ;
+ width: 40%;
+ display: flex;
+
+}
+.auto-result{
+  justify-content: center;
+  width: 40%;
+  display: flex;
+}
