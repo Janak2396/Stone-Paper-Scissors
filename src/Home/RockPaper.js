@@ -60,24 +60,24 @@ export default function RockPaper(){
     <>
         <div className="header">
             <div className="logo-header">
-                <Logo/>
+                <Logo className="real-logo"/>
                 <div className="score">
                     <div className="textScore"><p>score</p></div>
-                    <div className="outScore">{score}</div>
+                    <div className="countScore">{score}</div>
                 </div>
             </div>
             <div className="container">
                 <div className="triangle">
                     <Triangle/>
                 </div>    
-                <div className="papericon" onClick={()=>Clickevent('paper')}>
-                    <Paper  />
+                <div  onClick={()=>Clickevent('paper')}>
+                    <Paper  className="papericon"/>
                 </div>
-                <div className="rockicon" onClick={()=>Clickevent('rock')}>
-                    <Rock  />
+                <div onClick={()=>Clickevent('rock')}>
+                    <Rock  className="rockicon" />
                 </div>
-                <div className="scissorsicon"  onClick={()=>Clickevent('scissors')}>
-                    <Scissors />
+                <div onClick={()=>Clickevent('scissors')}>
+                    <Scissors  className="scissorsicon"  />
                 </div>
 
             </div>
