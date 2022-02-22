@@ -1,7 +1,7 @@
 import {ReactComponent as Rock} from '../images/icon-rock.svg'
 import {ReactComponent as Scissors} from '../images/icon-scissors.svg'
 import {ReactComponent as Paper} from '../images/icon-paper.svg'
-import '../Home/Winner.css'
+
 
 export function Winner({shown,close,resultobj,userChoiceobj,winobj})
 
